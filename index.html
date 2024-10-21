@@ -22,8 +22,8 @@
         <h1 class="site-name">LUMOS LIVING</h1>
         <nav>
           <ul class="nav-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Design Tips</a></li>
@@ -69,8 +69,25 @@
     </div>
   </section>
 
+  <!--About us Section-->
+  <section id="aboutus" class="about">
+    <div class="about-content">
+      <img src="Assets/about us.png" alt="About Us" />
+      <div class="about-text">
+        <h2>ABOUT US</h2>
+        <p>
+          Our interior design studio focuses on transforming your spaces into aesthetic, comfortable, and practical
+          environments.
+          Whether its modern, minimalism or timeless classics, we blend creativity and innovation to meet your unique
+          needs.
+          Let us bring your dream home to life with thoughtful designs that inspire and elevate everyday living.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!--Portfolio  Section-->
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <h1>PORTFOLIO</h1>
     <h4>Dream. Create. Live</h4>
     <div class="portfolio-gird">
@@ -88,10 +105,58 @@
       </div>
     </div>
 
+    <!-- Contact Page -->
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Email: lumosliving@gmail.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Address: 123 Design Street, City, Country</p>
+      <form action="#" method="POST">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    
+    <!-- FAQs Section -->
+    <section id="faq" class="section">
+      <h2>FREQUENTLY ASKED QUESTIONS</h2>
+      <h3>1. What services do you offer?</h3>
+      <p>
+        We provide a range of interior design services including space planning, color consultation, furniture selection,
+        and
+        custom design solutions for residential and commercial projects.
+      </p>
+      <h3>2. How does the design process work?</h3>
+      <p>
+        Our process begins with a consultation to understand your needs. We then create a design plan, which includes mood
+        boards, layouts, and product suggestions, followed by implementation.
+      </p>
+      <h3>3. How long does a typical project take?</h3>
+      <p>
+        Project timelines vary based on scope, but most designs take between 4 to 8 weeks. We’ll provide a detailed timeline
+        after the initial consultation.
+      </p>
+      <h3>4. Can I see examples of your previous work?</h3>
+      <p>
+        Yes, you can explore our portfolio in the Gallery section, where we showcase completed projects and client
+        testimonials.
+      </p>
+      <h3>5. How long does a project take?</h3>
+      <p>
+        Project timelines vary depending on the size and scope, but we strive to
+        complete all projects within the agreed timeframe.
+      </p>
+    </section>
+
     <!--footer section-->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Lumos Living.</p>
+        <p>&copy; 2024 Lumos Living</p>
       </div>
     </footer>
 </body>

@@ -8,7 +8,7 @@
 
 body {
   background-color: whitesmoke;
-  color: #333;
+  color: #5a3e36;
 }
 
 /* Header section */
@@ -52,7 +52,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #5a3e36;
   font-weight: 500;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .search-bar {
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 20px;
 }
 
@@ -186,6 +186,42 @@ body {
   /* Smaller font size */
 }
 
+/* About Us Section */
+.about {
+  padding: 3em;
+  background-color: #f7f5f2;
+  margin: 2em auto;
+  max-width: 1100px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content img {
+  width: 35%;
+  border-radius: 50px;
+}
+
+.about-text {
+  width: 70%;
+  padding: 0 2em;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  color: #5a3e36;
+}
+
 /* Portfolio Section */
 .portfolio {
   padding: 3em 0;
@@ -215,9 +251,61 @@ body {
   color: #333;
 }
 
+/* Contact Form */
+form {
+  margin: 1.5em 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5em 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #5a3e36;
+  color: #f7f7f6;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #d5a47a;
+}
+
+/* Section Styling */
+.section {
+  padding: 3em;
+  background-color: #f7f5f2;
+  margin: 2em auto;
+  max-width: 1100px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.section h2 {
+  color: #5a3e36;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.section p,
+.section ul {
+  margin: 1em 0;
+  color: #5a3e36;
+  text-align: left;
+}
+
 /* Footer Section */
 .footer {
-  background-color: #333;
+  background-color: #5a3e36;
   color: #fff;
   text-align: center;
   padding: 20px 0;
