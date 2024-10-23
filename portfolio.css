@@ -1,0 +1,289 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #5a3e36;
+}
+
+/* Header section */
+.header {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styles */
+.logo img {
+    width: 80px;
+}
+
+/* Site Name and Navigation Styles */
+.site-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*Navigation Styles */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #5a3e36;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #d5a47a;
+}
+
+/* Search Bar and Login Section */
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #28170D;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.login-btn:hover {
+    background-color: #28170D;
+}
+
+/* Full-length Image section */
+.full-image img {
+    width: 1265px;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+/* General Section styling */
+.section {
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 0;
+    color: #f7f5f2;
+}
+
+/* Residential Section */
+#residential {
+    background-color: #2E1F13;
+    min-height: 10px;
+}
+
+#residential h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#residential p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mood board section - Residential */
+.mood-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 10px;
+    padding: 3em;
+    background-color: #f7f5f2;
+    margin: 2em auto;
+    max-width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Color palette */
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.color {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Image grid styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Office Section */
+#office {
+    background-color: #2E1F13;
+    min-height: 10px;
+}
+
+#office h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#office p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mood board section - Office */
+.mood-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 10px;
+    padding: 3em;
+    background-color: #f7f5f2;
+    margin: 2em auto;
+    max-width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Color palette */
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.color {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Image grid styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sketch Section */
+#sketch {
+    background-color: #2E1F13;
+    min-height: 10px;
+}
+
+#sketch h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#sketch p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mood board section - Sketching */
+.mood-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 10px;
+    padding: 3em;
+    background-color: #f7f5f2;
+    margin: 2em auto;
+    max-width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Color palette */
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.color {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Image grid styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #2E1F13;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}

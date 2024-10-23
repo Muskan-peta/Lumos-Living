@@ -69,14 +69,14 @@ body {
 
 .search-bar {
   padding: 8px 12px;
-  border: 1px solid #333;
+  border: 1px solid #28170d;
   border-radius: 20px;
 }
 
 .login-btn {
   text-decoration: none;
   color: white;
-  background-color: #28170D;
+  background-color: #28170d;
   padding: 8px 16px;
   border-radius: 20px;
 }
@@ -229,6 +229,22 @@ body {
   background-color: #fdfdf9;
 }
 
+.portfolio h5 {
+  text-align: right;
+  text-decoration: none;
+  color: white;
+  background-color: #28170D;
+  padding: 8px 16px;
+  max-width: 80px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  float: right;
+}
+
+a:visited {
+  color: #5a3e36;
+}
+
 .portfolio-gird {
   display: flex;
   justify-content: space-around;
@@ -248,7 +264,7 @@ body {
 .portfolio-item h3 {
   margin-top: 1em;
   font-size: 1.5em;
-  color: #333;
+  color: #5a3e36;
 }
 
 /* Contact Form */
