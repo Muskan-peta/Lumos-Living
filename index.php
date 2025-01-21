@@ -3,9 +3,9 @@ session_start();
 
 // If the user is logged in, show the homepage with the username
 if (isset($_SESSION['user'])) {
-    $user_name = $_SESSION['user'];  // Store the user's name in a variable
+  $user_name = $_SESSION['user'];  // Store the user's name in a variable
 } else {
-    $user_name = null;  // Set as null if the user is not logged in
+  $user_name = null;  // Set as null if the user is not logged in
 }
 ?>
 <?php
@@ -18,65 +18,69 @@ use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $message = htmlspecialchars($_POST['message']);
 
-    // Validate input
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format.");
-    }
+  // Validate input
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    die("Invalid email format.");
+  }
 
-    // Create a new PHPMailer instance
-    $mail = new PHPMailer(true);
+  // Create a new PHPMailer instance
+  $mail = new PHPMailer(true);
 
-    try {
-        // Server settings
-        $mail->isSMTP();                                            // Set mailer to use SMTP
-        $mail->Host       = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
-        $mail->SMTPAuth   = true;                                  // Enable SMTP authentication
-        $mail->Username   = 'bidishahazra653@gmail.com';              // SMTP username
-        $mail->Password   = 'uzju yeay fjeg kqli';                // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also available
-        $mail->Port       = 587;                                   // TCP port to connect to
+  try {
+    // Server settings
+    $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->Host       = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                  // Enable SMTP authentication
+    $mail->Username   = 'muskansin821@gmail.com';              // SMTP username
+    $mail->Password   = 'ybay cpky cnoy pbkl';                // SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also available
+    $mail->Port       = 587;                                   // TCP port to connect to
 
-        // Recipients
-        $mail->setFrom('bidishahazra653@gmail.com', 'Contact Us');
-        $mail->addAddress('bidishahazra51@gmail.com', 'Bidisha Hazra'); // Add a recipient
+    // Recipients
+    $mail->setFrom('muskansin821@gmail.com', 'Contact Us');
+    $mail->addAddress('bidishahazra51@gmail.com', 'Bidisha Hazra'); // Add a recipient
 
-        // Content
-        $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Test Contact Form';
-        $mail->Body    = "<p><strong>Name:</strong> {$name}</p>
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Test Contact Form';
+    $mail->Body    = "<p><strong>Name:</strong> {$name}</p>
                           <p><strong>Email:</strong> {$email}</p>
                           <p><strong>Message:</strong><br>{$message}</p>";
-       
-                          $mail->send();
-                          // Redirect after successful email send
-                          header('Location: index.php?status=success');
-                          exit;
-                      } catch (Exception $e) {
-                          header('Location: index.php?status=error');
-                          exit;
-                      }
-                  }
-                  ?>
+
+    $mail->send();
+    // Redirect after successful email send
+    header('Location: index.php?status=success');
+    exit;
+  } catch (Exception $e) {
+    header('Location: index.php?status=error');
+    exit;
+  }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interior Designer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <!--
   <h1>Welcome to the Index Page</h1>
   <?php if ($user_name): ?>
     <p>You are logged in as: <strong><?php echo htmlspecialchars($user_name); ?></strong></p>
   <?php else: ?>
     <p>You are not logged in. Please <a href="login_form.php">Login</a>.</p>
   <?php endif; ?>
+  -->
 
   <!--Header Section-->
   <header class="header">
@@ -93,8 +97,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           <ul class="nav-links">
             <li><a href="#aboutus">About Us</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Reviews</a></li> 
+            <li><a href="services.php">Services</a></li>
+            <li><a href="#">Reviews</a></li>
             <li><a href="designtips.html">Design Tips</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -108,10 +112,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php if (!$user_name): ?>
           <a href="login_form.php" class="login-btn">Login</a>
         <?php else: ?>
-          <a href="logout.php" class="login-btn">Logout</a>  <!-- Logout Button -->
+          <a href="logout.php" class="login-btn">Logout</a> <!-- Logout Button -->
         <?php endif; ?>
       </div>
-    </div>  
+    </div>
   </header>
 
   <!-- Slider Section with Static Text -->
@@ -164,52 +168,60 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <section id="portfolio" class="portfolio">
     <h1>PORTFOLIO</h1>
     <h4>Dream. Create. Live</h4>
-    <a href="portfolio.html" target="_blank" rel="noopener noreferrer"><h5>Explore</h5></a>
+    <a href="portfolio.html" target="_blank" rel="noopener noreferrer">
+      <h5>Explore</h5>
+    </a>
     <div class="portfolio-gird">
       <div class="portfolio-item">
         <img src="Assets/Living Room.png" alt="Residential Space">
-        <a href="portfolio.html#residential" target="_blank" rel="noopener noreferrer"><h3>Residential Design</h3></a>
+        <a href="portfolio.html#residential" target="_blank" rel="noopener noreferrer">
+          <h3>Residential Design</h3>
+        </a>
       </div>
       <div class="portfolio-item">
         <img src="Assets/Office Space.png" alt="Office Space">
-        <a href="portfolio.html#office" target="_blank" rel="noopener noreferrer"><h3>Office Design</h3></a>
+        <a href="portfolio.html#office" target="_blank" rel="noopener noreferrer">
+          <h3>Office Design</h3>
+        </a>
       </div>
       <div class="portfolio-item">
         <img src="Assets/Sketching.png" alt="Conceptual Designs">
-        <a href="portfolio.html#sketch" target="_blank" rel="noopener noreferrer"><h3>Conceptual Design</h3></a>
+        <a href="portfolio.html#sketch" target="_blank" rel="noopener noreferrer">
+          <h3>Conceptual Design</h3>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:lumosliving@gmail.com">lumosliving@gmail.com</a></p>
-  <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
-  <p>Address: 123 Design Street, City, Country</p>
-  <?php
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:lumosliving@gmail.com">lumosliving@gmail.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+    <p>Address: 123 Design Street, City, Country</p>
+    <?php
     // Display status messages only once
     if (isset($_GET['status'])) {
-        if ($_GET['status'] === 'success') {
-            echo "<p>Message sent successfully!</p>";
-        } elseif ($_GET['status'] === 'error') {
-            echo "<p>There was an error sending your message. Please try again.</p>";
-        }
+      if ($_GET['status'] === 'success') {
+        echo "<p>Message sent successfully!</p>";
+      } elseif ($_GET['status'] === 'error') {
+        echo "<p>There was an error sending your message. Please try again.</p>";
+      }
     }
     ?>
-  <form action="index.php" method="POST">
-    <label for="name">Name:</label><br />
-    <input type="text" id="name"  class=" form-control mt-4" name="name" placeholder="Your Name" required /><br />
+    <form action="index.php" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" class=" form-control mt-4" name="name" placeholder="Your Name" required /><br />
 
-    <label for="email">Email:</label><br />
-    <input type="email" id="email"  class=" form-control mt-4"name="email" placeholder="Your Email" required /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" class=" form-control mt-4" name="email" placeholder="Your Email" required /><br />
 
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message"  class=" form-control mt-4" rows="5" placeholder="Your Message" required></textarea><br /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" class=" form-control mt-4" rows="5" placeholder="Your Message" required></textarea><br /><br />
 
-    <button type="submit" class="btn btn-primary mt-4">Submit</button>
-  </form>
-</section>
+      <button type="submit" class="btn btn-primary mt-4">Submit</button>
+    </form>
+  </section>
 
   <!-- FAQs Section -->
   <section id="faq" class="section">
@@ -232,4 +244,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </footer>
 
 </body>
+
 </html>

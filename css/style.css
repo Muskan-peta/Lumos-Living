@@ -1,0 +1,176 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5e3d3; /* New background color */
+  color: #5a3e36;
+  font-size: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Logo styling */
+.logo-container {
+  margin-bottom: 20px; /* Space between logo and login form */
+  text-align: center;  /* Centering the logo */
+}
+
+.logo {
+  width: 120px; /* Adjust size of the logo */
+  height: auto;
+}
+
+/* Form container styling */
+.form-container {
+  background-color: #fff8e1; /* Light yellowish background for the form */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px; /* Increase width of the form */
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+h3 {
+  font-size: 2.2em;
+  color: #5a3e36;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input column style for Name and Email */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 14px; /* Increased padding for better user experience */
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #d5a47a;
+  outline: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #5a3e36;
+  color: #fff;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d5a47a;
+}
+
+/* Error message styling */
+.error-msg {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Register link styling */
+p {
+  text-align: center;
+  font-size: 16px;
+}
+
+p a {
+  color: #5a3e36;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  color: #d5a47a;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #4CAF50;
+  padding: 15px 0;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header .site-navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+header .site-navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .right-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .right-side .search-bar {
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+header .right-side .cart-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #e74c3c;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
