@@ -108,7 +108,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
       <!--Search bar and Login section-->
       <div class="right-side">
-        <input type="text" placeholder="Search.." class="search-bar">
+        <form action="search.php" method="GET" class="search-form">
+          <input type="text" name="query" placeholder="Search for products..." class="search-bar" required>
+          <button type="submit" class="search-btn">Search</button>
+        </form>
         <?php if (!$user_name): ?>
           <a href="login_form.php" class="login-btn">Login</a>
         <?php else: ?>
