@@ -25,14 +25,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->isSMTP();                                            // Set mailer to use SMTP
         $mail->Host       = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                  // Enable SMTP authentication
-        $mail->Username   = 'bidishahazra653@gmail.com';              // SMTP username
-        $mail->Password   = 'uzju yeay fjeg kqli';                // SMTP password
+        $mail->Username   = 'abc';              // SMTP username
+        $mail->Password   = 'xyz';                // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also available
         $mail->Port       = 587;                                   // TCP port to connect to
 
         // Recipients
-        $mail->setFrom('bidishahazra653@gmail.com', 'Contact Us');
-        $mail->addAddress('bidishahazra51@gmail.com', 'Bidisha Hazra'); // Add a recipient
+        $mail->setFrom('abc', 'Contact Us');
+        $mail->addAddress('abc' 'name'); // Add a recipient
 
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
